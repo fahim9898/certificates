@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>fav2.png">
+    <title>Liquor Shop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link rel="apple-touch-icon" href="<%= BASE_URL %>assets/app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<%= BASE_URL %>assets/app-assets/images/ico/favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/extensions/unslider.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/weather-icons/climacons.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/fonts/meteocons/style.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/charts/morris.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/forms/toggle/switchery.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/plugins/forms/switch.css">
+    <!-- END: Vendor CSS-->
+    
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+    <!-- END: Theme CSS-->
+    
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>app-assets/css/pages/card-statistics.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>app-assets/css/pages/vertical-timeline.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/plugins/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/app-assets/css/pages/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- END: Page CSS-->
+    
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>assets/assets/css/style.css">
+
+  </head>
+  <!-- <body class="vertical-layout vertical-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns"> -->
+  <body class="vertical-layout vertical-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+
+    <!-- BEGIN: Vendor JS-->
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/vendors.min.js"></script>
+  
+  <!-- BEGIN Vendor JS-->
+  
+  <!-- BEGIN: Page Vendor JS-->
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/charts/raphael-min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/charts/morris.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/extensions/unslider-min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/timeline/horizontal-timeline.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/extensions/toastr.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/tables/datatable/datatables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/forms/toggle/bootstrap-checkbox.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/vendors/js/forms/toggle/switchery.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/js/pdfmake.min.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/js/vfsfont.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.19/api/sum().js"></script>*
+  <!-- END: Page Vendor JS-->
+  
+  <!-- BEGIN: Theme JS-->
+  <script src="<%= BASE_URL %>assets/app-assets/js/core/print.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/js/core/app-menu.js"></script>
+  <script src="<%= BASE_URL %>assets/app-assets/js/core/app.js"></script>
+  <!-- END: Theme JS-->
+  
+  <!-- BEGIN: Page JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+    integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="<%= BASE_URL %>assets/app-assets/js/scripts/forms/select/form-select2.js"></script> -->
+  <script>
+    Date.prototype.isValid = function () {
+      return this.getTime() === this.getTime();
+    };
+    $(document).ready(function (){
+      window.dispatchEvent(new Event('resize'));
+    })
+  </script>
+  <script>
+    ////////// API //////////
+
+      // To be part of ECMAScript.next
+      if (!Object.getOwnPropertyDescriptors) {
+        Object.getOwnPropertyDescriptors = function (obj) {
+          var descs = {};
+          Object.getOwnPropertyNames(obj).forEach(function (propName) {
+            descs[propName] = Object.getOwnPropertyDescriptor(obj, propName);
+          });
+          return descs;
+        };
+      }
+
+      /**
+       * The root of all classes that adhere to "the prototypes as classes" protocol.
+       * The neat thing is that the class methods "new" and "extend" are automatically
+       * inherited by subclasses of this class (because Proto is in their prototype chain).
+       */
+      var Proto = {
+        /**
+         * Class method: create a new instance and let instance method constructor() initialize it.
+         * "this" is the prototype of the new instance.
+         */
+        new: function () {
+          var instance = Object.create(this);
+          if (instance.constructor) {
+            instance.constructor.apply(instance, arguments);
+          }
+          return instance;
+        },
+
+        /**
+         * Class method: subclass "this" (a prototype object used as a class)
+         */
+        extend: function (subProps) {
+          // We cannot set the prototype of "subProps"
+          // => copy its contents to a new object that has the right prototype
+          var subProto = Object.create(this, Object.getOwnPropertyDescriptors(subProps));
+          subProto.super = this; // for super-calls
+          return subProto;
+        },
+      };
+
+      /**
+       * Optional: compatibility with constructor functions
+       */
+      Function.prototype.extend = function (subProps) {
+        var constrFunc = this;
+        // Let a prototype-as-class extend a constructor function constrFunc.
+        // Step 1: tmpClass is Proto, but as a sub-prototype of constrFunc.prototype
+        var tmpClass = Proto.extend.call(constrFunc.prototype, Proto);
+        // Step 2: tmpClass is a prototype-as-class => use as such
+        return tmpClass.extend(subProps);
+      };
+
+      window.TableExpand = Proto.extend({
+          constructor: function (table, class_name) {
+            this.$ = jQuery;
+            this.table = table,
+            this.tr_class = class_name,
+            this.main_trs = [],
+            this.trs = []
+            this.is_expanded = false;
+            this.init();
+          },
+          init: function () {
+            this.trs = this.$(this.table +' tbody>tr'+ this.tr_class)
+              .map((i, tr_h)=> {
+                return {
+                  tr_h: tr_h,
+                  is_expand: false,
+                  tr_c: this.$(tr_h).nextUntil('.l_total')
+                }
+              });
+            this.$(document).off('click', '.expand_btn');             
+            this.copy();
+            this.addExpandBtn();
+            this.expand();
+          },
+          copy: function () {
+            this.main_trs = [...this.trs]
+          },
+          addExpandBtn: function () {
+            this.trs.each((ss, tr)=>{
+              let btn = '<span class="expand_btn" id=expand__'+ ss+'><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>';
+              if(tr.tr_c.length > 0) {
+                this.$(this.$(tr.tr_h)[0]).children().eq(0).append(btn);
+              }
+            })
+            let tht = this;
+            this.$(document).on('click','.expand_btn', function (){
+              let id = this.id.split('__')[1];
+              if($(this).hasClass('expand')) {
+                $(this).removeClass('expand')
+                tht.trs[id].is_expand = false;
+              }else {
+                $(this).addClass('expand')
+                tht.trs[id].is_expand = true;
+              }
+              tht.expand();
+            })
+          },
+          expand: function (){
+            this.trs.each((i,tr)=>{
+              if(!tr.is_expand) {
+                this.$(tr.tr_c).addClass('d-none')
+              }else {
+                this.$(tr.tr_c).removeClass('d-none')
+              }
+            })
+          }
+        })
+//*/
+  </script>
+  <!-- END: Page JS -->
+  
+</html>
+
