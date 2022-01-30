@@ -1,0 +1,42 @@
+.w-50px {
+  width: 50px !important;
+}
+
+.w-120px {
+  /* width: 190px !important;
+  object-fit: contain; */
+}
+
+.certificate-page {
+  padding-top: 0px !important;
+}
+
+.header-app {
+  padding: 10px 2% !important;
+}
+.header-app .logo-img {
+  max-width: 150% !important;
+}
+
+.d-flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 992px){
+  .lj-university-logo {
+    width: 400px !important;
+  }
+}
+
+.sorry-page {
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sorry-page h5{
+  text-align: center;
+  font-size: 5rem;
+}
